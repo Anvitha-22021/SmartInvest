@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Predicted Stocks</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Montserrat:400,700|Lato:400,100,300,700,900|Raleway:400,100,200,300,500,700,900|Noto+Serif:400,400italic|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #0b0c13;
+            background-image: url('investment.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #0b0c13;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .home-btn,
+        .back-btn {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0b0c13;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .home-btn:hover,
+        .back-btn:hover {
+            background-color: #ffffff;
+            color: #0b0c13;
+            text-decoration: none;
+        }
+
+        .home-btn {
+            position: absolute;
+            right: 120px;
+        }
+
+        .back-btn {
+            position: absolute;
+            right: 20px;
+        }
+
+        .wrapper {
+            height: calc(100vh - 80px); /* Adjust height as needed */
+            overflow-y: auto;
+        }
+
+        .result-container {
+            width: 50%;
+            margin: 50px auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .result-container h1 {
+            color: #0b0c13;
+            margin-bottom: 20px;
+        }
+
+        .result-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .result-container ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Added styles for images and links */
+        .image-container {
+            display: flex;
+            justify-content: center; /* Center align the images */
+            margin-top: 20px;
+        }
+
+        .image-container div {
+            margin: 0 10px; /* Adjust the margin as needed */
+        }
+
+        .image-container img {
+            height: 300px; /* Increase the height */
+            width: 300px; /* Increase the width */
+        }
+
+        .image-container p {
+            margin: 5px 0;
+        }
+
+        .image-container a {
+            text-decoration: none;
+            color: #0b0c13;
+            font-weight: bold;
+        }
+
+        .image-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Added styles for the note */
+        .note {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .note p {
+            color: #0b0c13;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Blue Bar -->
+    <div class="top-bar">
+        <span class="logo">SMART INVEST</span>
+        <a href="/" class="home-btn">Home</a>
+        <a href="/newpage.html" class="back-btn">Back</a>
+    </div>
+
+    <!-- Wrapper with scroll option -->
+    <div class="wrapper">
+        <!-- Result Section -->
+        <div class="result-container">
+            <h1>Suggested Stocks</h1>
+            <p>{{ suggestion }}</p>
+            <ul>
+                {% for stock in stocks %}
+                    <li>
+                        <strong>Stock Name:</strong> {{ stock[0] }} - {{ stock_company_mapping[stock[0]] }}<br>
+                        <strong>Return:</strong> {{ stock[1] }}%<br>
+                        <strong>Total Amount:</strong> ₹{{ stock[2]|round }}<br>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+            <!-- Images and links -->
+            <div class="image-container">
+                {% for stock in stocks %}
+                    <div>
+                        <img src="{{ stock_image_links[stock[0]] }}">
+                        <p>
+                            Click here to know more about 
+                            <a href="{{ stock_finviz_links[stock[0]] }}" target="_blank">
+                                {{ stock_company_mapping[stock[0]] }} stock
+                            </a>
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Note: Invest at your own risk -->
+            <div class="note">
+                <p>!! INVEST AT YOUR OWN RISK !!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

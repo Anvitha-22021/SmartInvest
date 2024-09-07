@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market Club</title>
+  <link rel="stylesheet" href="/static/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Montserrat:400,700|Lato:400,100,300,700,900|Raleway:400,100,200,300,500,700,900|Noto+Serif:400,400italic|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/static/index.css">
+  <script src="/static/index.js"></script>
+  <style>
+    .get-started-btn {
+      background-color: #ffffff;
+      color: #0b0c13;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .get-started-btn:hover {
+      background-color: #0b0c13;
+      color: #ffffff;
+    }
+
+    .about-section {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    .about-heading {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .about-item {
+      margin-bottom: 20px;
+      display: inline-block;
+      text-align: center; /* Center align the content */
+    }
+
+    .about-item h2,
+    .about-item p {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center; /* Aligned text to left */
+    }
+
+    .about-item.in-view h2,
+    .about-item.in-view p {
+      opacity: 1;
+    }
+
+    .about-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: 'Montserrat', sans-serif;
+      align:center;
+    }
+
+    .about-description {
+      font-family: 'Noto Serif', serif, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #999;
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 30px;
+    }
+.about-item.left h2 {
+  font-weight: normal;
+}
+
+
+    /* Center align social and about-section */
+    .social,
+    .about-section {
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!--Preloader-->
+  <div class="loading">
+    <div class="svg-wrapper">
+      <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect class="animate" height="150" width="150" />
+      </svg>
+      <div class="text">
+        <span class="logo">SI</span>
+        <span class="motto">we predict stocks</span>
+      </div>
+    </div>
+  </div>
+
+  <!--SVG animation-->
+  <script>
+    var p = document.querySelector('.animate'),
+      offset = 600;
+    var offsetMe = function() {
+      if (offset < 0) {
+        offset = 600;
+      }
+      p.style.strokeDashoffset = offset;
+      offset = offset - 5;
+      requestAnimationFrame(offsetMe);
+    }
+    offsetMe();
+  </script>
+
+  <!--Desktop Navigation-->
+  <span class="desktop">
+    <header>
+      <span id="logo">SMART INVEST</span>
+      <nav>
+        <a id="d_one" href="#home">Home</a>
+        <a id="d_two" href="#about">About</a>
+        <a id="d_three" href="newpage.html">Predict</a>
+      </nav>
+    </header>
+  </span>
+
+  <!--Mobile Navigation-->
+  <span class="mobile">
+    <header>
+      <span id="logo">SMART INVEST</span>
+      <div class="button_container">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </header>
+    <div class="overlay">
+      <nav>
+        <ul>
+          <li><a id="m_one" href="#home">Home</a></li>
+          <li><a id="m_two" href="#about">About</a></li>
+          <li><a id="m_three" href="newpage.html">Predict</a></li>
+        </ul>
+      </nav>
+    </div>
+  </span>
+
+  <!--Homepage-->
+  <div class="wrapper" id="home">
+    <div class="landing">
+      <h1>Discover investment plans tailored for you</h1>
+      <h2>we predict stocks</h2>
+    </div>
+  </div>
+
+  <!--Mouse scroller-->
+  <span class="mouseScroll"></span>
+
+  <!--About SMC-->
+  <div class="about" id="about">
+    <div class="hideme">
+      <h1>SMART INVEST</h1>
+    </div>
+    <div class="hideme">
+      <div id="mission">
+        <p>Our project utilizes advanced algorithms such as Random Forest and clustering to craft personalized investment plans for clients. By analyzing financial data alongside sentiment from news and social media, we create balanced portfolios designed to maximize returns while mitigating risk. With real-time adjustments, our strategies remain adaptable to market dynamics. Ready to optimize your investments? Click "Get Started" now!</p>
+      </div>
+    </div>
+    <!-- Get Started Button -->
+    <a class="get-started-btn" href="newpage.html">Get Started</a>
+    <!-- About Project Heading -->
+    <h1 class="about-heading">About Project</h1>
+    
+    <!-- Sentiment Analysis Section -->
+    <div class="about-item left hideme">
+      <h2 class="about-title">Sentiment Analysis</h2>
+      <p class="about-description" style="font-family: 'Noto Serif', serif, sans-serif;">The code scrapes news headlines from Finviz for chosen stocks, then assesses sentiment using VADER Sentiment Analyzer. After aggregating sentiment scores, it employs a simple linear regression model to predict stock returns based on sentiment. However, the model's returns are randomized in this demonstration, requiring real historical data for practical application.</p>
+    </div>
+  
+    <!-- Random Forest Section -->
+    <div class="about-item left hideme">
+      <h2 class="about-title">Random Forest</h2>
+      <p class="about-description" style="font-family: 'Noto Serif', serif, sans-serif;">The Random Forest Regressor from scikit-learn's ensemble module is applied in this code to predict future stock prices using historical data. It utilizes features like opening price, high price, low price, volume, and sentiment score to generate predictions for a specific investment time horizon.</p>
+    </div>
+  
+    <!-- KMeans Section -->
+    <div class="about-item left hideme">
+      <h2 class="about-title">KMeans</h2>
+      <p class="about-description" style="font-family: 'Noto Serif', serif, sans-serif;">KMeans clustering from scikit-learn's cluster module is utilized to group customers into three clusters based on their income and savings. This clustering helps categorize customers into distinct risk profiles for stock investments, enabling personalized recommendations tailored to their risk preferences.</p>
+    </div>
+  </div>
+
+  <!--Script for fading in objects on scroll-->
+  <script>
+    $(window).scroll(function() {
+      $('.hideme').each(function(i) {
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_object) {
+          $(this).addClass('in-view');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+  Record,Income,Savings,Investment Goals                                                      
+  1,28754 ,17123,Low Risk Goals     
+  2,62981,48329,Medium Goals       
+  3,97742,69584,Aggressive Goals   
+  4,34567,20543,Low Risk Goals     
+  5,71628,54621,Medium Goals       
+  6,83542,60231,Aggressive Goals   
+  7,45563,31429,Medium Goals       
+  8,79123,57593,Aggressive Goals   
+  9,41325,26237,Medium Goals       
+  10,29581,18326,Low Risk Goals     
+  11,65329,49183,Medium Goals       
+  12,92016,68524,Aggressive Goals   
+  13,31472,19837,Low Risk Goals     
+  14,68854,55572,Medium Goals       
+  15,85023,61329,Aggressive Goals   
+  16,43291,29987,Medium Goals       
+  17,76325,59024,Aggressive Goals   
+  18,39784,24897,Medium Goals       
+  19,27096,16321,Low Risk Goals     
+  20,61237,46523,Medium Goals       
+  21,99013,71123,Aggressive Goals   
+  22,36942,22365,Low Risk Goals     
+  23,73261,55987,Medium Goals       
+  24,86524,62781,Aggressive Goals   
+  25,47652,32786,Medium Goals       
+  26,80623,60529,Aggressive Goals   
+  27,44287,29347,Medium Goals       
+  28,77936,57192,Aggressive Goals   
+  29,39014,24286,Medium Goals       
+  30,26587,15739,Low Risk Goals     
+  31,64059,48562,Medium Goals       
+  32,91127,69931,Aggressive Goals   
+  33,32568,20173,Low Risk Goals     
+  34,70742,54329,Medium Goals       
+  35,84032,61682,Aggressive Goals   
+  36,45971,31864,Medium Goals       
+  37,78742,57693,Aggressive Goals   
+  38,40892,25974,Medium Goals       
+  39,28349,17528,Low Risk Goals     
+  40,62831,47125,Medium Goals       
+  41,99012,71526,Aggressive Goals   
+  42,34871,21967,Low Risk Goals     
+  43,72598,55629,Medium Goals       
+  44,86234,62098,Aggressive Goals   
+  45,47258,33147,Medium Goals       
+  46,80542,60321,Aggressive Goals   
+  47,43429,29167,Medium Goals       
+  48,76932,58823,Aggressive Goals   
+  49,39571,24689,Medium Goals       
+  50,26973,16042,Low Risk Goals     
+  51,61483,46573,Medium Goals       
+  52,91528,70231,Aggressive Goals   
+  53,32098,19982,Low Risk Goals     
+  54,70532,54532,Medium Goals       
+  55,84867,61853,Aggressive Goals   
+  56,46529,31329,Medium Goals       
+  57,78643,57329,Aggressive Goals   
+  58,41329,26781,Medium Goals       
+  59,29054,17863,Low Risk Goals     
+  60,64092,47953,Medium Goals       
+  61,99423,71482,Aggressive Goals   
+  62,34921,22091,Low Risk Goals     
+  63,72263,55483,Medium Goals       
+  64,85921,62431,Aggressive Goals   
+  65,47762,32948,Medium Goals       
+  66,80032,60789,Aggressive Goals   
+  67,43892,29643,Medium Goals       
+  68,77123,58923,Aggressive Goals   
+  69,39762,25129,Medium Goals       
+  70,27149,16752,Low Risk Goals     
+  71,61572,46329,Medium Goals       
+  72,91876,69832,Aggressive Goals   
+  73,32078,19873,Low Risk Goals     
+  74,70123,54286,Medium Goals       
+  75,85029,61392,Aggressive Goals   
+  76,46293,31729,Medium Goals       
+  77,78742,57529,Aggressive Goals   
+  78,41528,26731,Medium Goals       
+  79,28973,18126,Low Risk Goals     
+  80,63897,47261,Medium Goals       
+  81,99823,71931,Aggressive Goals   
+  82,35127,22498,Low Risk Goals     
+  83,72895,55592,Medium Goals       
+  84,86132,61931,Aggressive Goals   
+  85,47629,33042,Medium Goals       
+  86,80529,60539,Aggressive Goals   
+  87,43921,29487,Medium Goals       
+  88,77329,59129,Aggressive Goals   
+  89,39962,25329,Medium Goals       
+  90,27592,16654,Low Risk Goals     
+  91,61329,46592,Medium Goals       
+  92,91732,70432,Aggressive Goals   
+  93,32297,19982,Low Risk Goals     
+  94,70329,54392,Medium Goals       
+  95,85234,61738,Aggressive Goals   
+  96,46721,31892,Medium Goals       
+  97,79234,57829,Aggressive Goals   
+  98,41123,26423,Medium Goals       
+  99,28534,17734,Low Risk Goals     
+  100,62984,47328,Medium Goals       
+  101,99823,71234,Aggressive Goals   
+  102,35092,22291,Low Risk Goals     
+  103,72529,55623,Medium Goals       
+  104,86421,62031,Aggressive Goals   
+  105,47329,32987,Medium Goals       
+  106,80329,60234,Aggressive Goals   
+  107,43728,29751,Medium Goals       
+  108,77129,58823,Aggressive Goals   
+  109,39981,25439,Medium Goals       
+  110,27831,16892,Low Risk Goals     
+  111,61632,46931,Medium Goals       
+  112,91843,70234,Aggressive Goals   
+  113,32539,20034,Low Risk Goals     
+  114,70492,54286,Medium Goals       
+  115,85532,61872,Aggressive Goals   
+  116,47013,32529,Medium Goals       
+  117,80032,60629,Aggressive Goals   
+  118,43529,29582,Medium Goals       
+  119,76932,59021,Aggressive Goals   
+  120,39281,25293,Medium Goals       
+  121,27693,17125,Low Risk Goals     
+  122,61732,46329,Medium Goals       
+  123,91582,70234,Aggressive Goals   
+  124,32879,19872,Low Risk Goals     
+  125,70542,54732,Medium Goals       
+  126,85234,61853,Aggressive Goals   
+  127,47329,32623,Medium Goals       
+  128,80123,60528,Aggressive Goals   
+  129,43892,29632,Medium Goals       
+  130,77529,58921,Aggressive Goals   
+  131,39932,25231,Medium Goals       
+  132,28129,16983,Low Risk Goals     
+  133,61234,46781,Medium Goals       
+  134,91234,70234,Aggressive Goals   
+  135,32981,20134,Low Risk Goals     
+  136,70892,54286,Medium Goals       
+  137,85329,61732,Aggressive Goals   
+  138,47629,32791,Medium Goals       
+  139,79932,60532,Aggressive Goals   
+  140,43729,29348,Medium Goals       
+  141,76923,59023,Aggressive Goals   
+  142,39429,25492,Medium Goals       
+  143,27751,17234,Low Risk Goals     
+  144,61823,46932,Medium Goals       
+  145,91672,70432,Aggressive Goals   
+  146,32984,20032,Low Risk Goals     
+  147,71092,54523,Medium Goals       
+  148,85532,61734,Aggressive Goals   
+  149,47692,32781,Medium Goals       
+  150,79932,60523,Aggressive Goals   
+  151,43829,29632,Medium Goals       
+  152,76823,58832,Aggressive Goals   
+  153,39492,25432,Medium Goals       
+  154,27592,17329,Low Risk Goals     
+  155,61572,46932,Medium Goals       
+  156,91732,70329,Aggressive Goals   
+  157,32791,20234,Low Risk Goals     
+  158,70823,54732,Medium Goals       
+  159,85329,61742,Aggressive Goals   
+  160,47629,32781,Medium Goals       
+  161,80123,60532,Aggressive Goals   
+  162,43532,29348,Medium Goals       
+  163,76932,59023,Aggressive Goals   
+  164,39932,25231,Medium Goals       
+  165,28129,16983,Low Risk Goals     
+  166,61234,46781,Medium Goals       
+  167,91234,70234,Aggressive Goals   
+  168,32981,20134,Low Risk Goals     
+  169,70892,54286,Medium Goals       
+  170,85329,61732,Aggressive Goals   
+  171,47629,32791,Medium Goals       
+  172,79932,60532,Aggressive Goals   
+  173,43829,29632,Medium Goals       
+  174,76823,58832,Aggressive Goals   
+  175,39429,25492,Medium Goals       
+  176,27751,17234,Low Risk Goals     
+  177,61823,46932,Medium Goals       
+  178,91672,70432,Aggressive Goals   
+  179,32984,20032,Low Risk Goals     
+  180,71092,54523,Medium Goals       
+  181,85532,61734,Aggressive Goals   
+  182,47692,32781,Medium Goals       
+  183,79932,60523,Aggressive Goals   
+  184,43729,29348,Medium Goals       
+  185,76923,59023,Aggressive Goals   
+  186,39429,25492,Medium Goals       
+  187,27592,17329,Low Risk Goals     
+  188,61572,46932,Medium Goals       
+  189,91732,70329,Aggressive Goals   
+  190,32791,20234,Low Risk Goals     
+  191,70823,54732,Medium Goals       
+  192,85329,61742,Aggressive Goals   
+  193,47629,32781,Medium Goals       
+  194,80123,60532,Aggressive Goals   
+  195,43532,29348,Medium Goals       
+  196,76932,59023,Aggressive Goals   
+  197,39932,25231,Medium Goals       
+  198,28129,16983,Low Risk Goals     
+  199,61234,46781,Medium Goals       
+  200,91234,70234,Aggressive Goals   
